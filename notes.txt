@@ -1,0 +1,10 @@
+
+To run flask app on GKE with a load balancer
+Based on https://cloud.google.com/kubernetes-engine/docs/quickstarts/deploy-app-container-image
+
+
+
+
+
+
+

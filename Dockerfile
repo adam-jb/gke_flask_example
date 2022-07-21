@@ -2,7 +2,7 @@ FROM python:3.9-buster
 
 COPY . . 
 
-RUN pip3 install -r requirements.txt
+RUN pip install Flask gunicorn
 
-
-ENTRYPOINT FLASK_APP=app.py flask run --host=0.0.0.0
+# run gunicorn 
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 app:app
