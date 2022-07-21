@@ -93,7 +93,7 @@ gcloud container clusters describe gke-flask-example \
 
 ### To delete cluster and image
 ```
-gcloud container clusters delete gke-flask-example
+gcloud container clusters delete gke-flask-example --region=europe-west2-b --quiet
 
 gcloud artifacts docker images delete \
     europe-west2-docker.pkg.dev/volatility-portfolio-bot/gke-flask-example/gke_flask_example
