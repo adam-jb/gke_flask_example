@@ -13,9 +13,6 @@ A service will have an external IP you can access from the internet
 
 Can view CPU usage in 'Workloads' tab of GKE dashboard
 
-<br>
-Useful cheatsheet: export PROJECT_ID=$(gcloud config list --format 'value(core.project)' 2>/dev/null)
-
 
 
 
